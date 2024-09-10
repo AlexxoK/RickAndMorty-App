@@ -8,7 +8,7 @@ export const GCharacters = ({characters}) => {
                             <div key={char.id} className="mt-5">
                                 <h5 className='text-center'>{char.name}</h5>
                                 <h6 className='text-center'>{char.species}</h6>
-                                <img style={{width: '200px'}} src={char.image} alt='image' />
+                                <img style={{width: '270px'}} src={char.image} alt='image' />
                             </div>
                         ))
                 }

@@ -5,7 +5,7 @@ export const BuscarEspecies = ({ handleFiltrarEspecie }) => {
 
     return (
         <FormControl size="small" style={{ minWidth: 150 }}>
-            <InputLabel id="especie-select-label">Especies</InputLabel>
+            <InputLabel id="especie-select-label">Species</InputLabel>
             <Select
                 labelId="especie-select-label"
                 defaultValue=""
@@ -13,7 +13,7 @@ export const BuscarEspecies = ({ handleFiltrarEspecie }) => {
                 label="Especie"
                 style={{ fontSize: '0.75rem', padding: '0.5rem' }}
             >
-                <MenuItem value="">Todas</MenuItem>
+                <MenuItem value="">All</MenuItem>
                 {especies.map((especie) => (
                     <MenuItem key={especie} value={especie}>
                         {especie}

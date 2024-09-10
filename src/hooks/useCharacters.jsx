@@ -6,14 +6,10 @@ export const useCharacters = (pagina, buscarPer, especie) => {
 
     useEffect(() => {
         const fetchData = async () => {
-            try {
-                const response = await fetch(`https://rickandmortyapi.com/api/character/?page=${pagina}&name=${buscarPer}&species=${especie}`)
-                const data = await response.json()
-                setCharacters(data.results)
-                setTotalPages(data.info.pages)
-            } catch (error) {
-                console.error("Error fetching data:", error)
-            }
+            const response = await fetch(`https://rickandmortyapi.com/api/character/?page=${pagina}&name=${buscarPer}&species=${especie}`)
+            const data = await response.json()
+            setCharacters(data.results)
+            setTotalPages(data.info.pages)
         }
 
         fetchData();

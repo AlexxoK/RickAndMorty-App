@@ -22,14 +22,12 @@ export const RickAndMortyApp = () => {
   return (
     <>
         <GCharacters characters={characters} />
-        <div className="mt-2">
             <nav className="navbar fixed-top">
-            <div className="container d-flex align-items-center gap-2">
-                <BuscarCharacters handleBuscar={handleBuscar} />
-                <BuscarEspecies handleFiltrarEspecie={handleFiltrarEspecie} />
-            </div>
+                <div className="container d-flex align-items-center gap-2">
+                    <BuscarCharacters handleBuscar={handleBuscar} />
+                    <BuscarEspecies handleFiltrarEspecie={handleFiltrarEspecie} />
+                </div>
             </nav>
-        </div>
         <Pagination count={totalPages} page={pagina} onChange={(e, value) => setPagina(value)} className="d-flex justify-content-center mt-5"/>
     </>
   )
